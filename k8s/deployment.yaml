@@ -21,7 +21,7 @@ spec:
         - name: PORT
           value: "8080"
         - name: ProxySite
-          value: "www.crazygames.com"
+          value: "mirror.umd.edu"
         - name: Vless_UUID
           value: "56956827-9c9c-4e0b-9ff2-98abd4160d6a"
         - name: Vless_Path
