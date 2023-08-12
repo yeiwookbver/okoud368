@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: comkek
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: comkek
+  template:
+    metadata:
+      labels:
+        app: comkek
+    spec:
+      containers:
+      - image: okteto.dev/comkek:latest
+        name: comkek
+        ports:
+        - containerPort: 8080
+        env:
+        - name: PORT
+          value: "8080"
+        - name: ProxySite
+          value: "www.plex.tv"
+        - name: Vless_UUID
+          value: "2800e0c1-4f46-45be-b621-83750d5b2ebe"
+        - name: Vless_Path
+          value: "/2800e0c1-4f46-45be-b621-83750d5b2ebe"
+        - name: Vmess_UUID
+          value: "d398eebe-3c19-4105-a335-54ab1028af03"
+        - name: Vmess_Path
+          value: "/d398eebe-3c19-4105-a335-54ab1028af03"
+        - name: Share_Path
+          value: "/Share039"
