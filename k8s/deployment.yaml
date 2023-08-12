@@ -13,7 +13,7 @@ spec:
         app: genius
     spec:
       containers:
-      - image: okteto.dev/comkek:latest
+      - image: okteto.dev/genius:latest
         name: genius
         ports:
         - containerPort: 8080
