@@ -5,7 +5,7 @@
   "env": {
     "ProxySite": {
       "description": "反代一个网站，例如：www.plex.tv，不填写表示使用本地静态网页文件。",
-      "value": "icook.tw"
+      "value": "www.crazygames.com"
     },
 
     "Vless_UUID": {
