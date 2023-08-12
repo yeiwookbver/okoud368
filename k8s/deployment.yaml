@@ -1,34 +1,34 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: comkek
+  name: genius
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: comkek
+      app: genius
   template:
     metadata:
       labels:
-        app: comkek
+        app: genius
     spec:
       containers:
       - image: okteto.dev/comkek:latest
-        name: comkek
+        name: genius
         ports:
         - containerPort: 8080
         env:
         - name: PORT
           value: "8080"
         - name: ProxySite
-          value: "www.plex.tv"
+          value: "www.crazygames.com"
         - name: Vless_UUID
-          value: "2800e0c1-4f46-45be-b621-83750d5b2ebe"
+          value: "56956827-9c9c-4e0b-9ff2-98abd4160d6a"
         - name: Vless_Path
-          value: "/2800e0c1-4f46-45be-b621-83750d5b2ebe"
+          value: "/56956827-9c9c-4e0b-9ff2-98abd4160d6a"
         - name: Vmess_UUID
-          value: "d398eebe-3c19-4105-a335-54ab1028af03"
+          value: "46b4f13d-79a5-4156-9c1a-c918f5314b49"
         - name: Vmess_Path
-          value: "/d398eebe-3c19-4105-a335-54ab1028af03"
+          value: "/46b4f13d-79a5-4156-9c1a-c918f5314b49"
         - name: Share_Path
           value: "/Share039"
